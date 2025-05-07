@@ -5,8 +5,9 @@ USE_Q8 = False
 USE_LORA = False
 DEVICE = "cuda:0"
 
-TRAIN_BATCH_SIZE = 4
+TRAIN_BATCH_SIZE = 2
 EPOCHS = 1
 TOP_K = 5
 
 DATASET_PATH = "mrbesher/flickr-fi"
+OUTPUT_DIR = "/kaggle/working/kuvahaku_fi_model"
