@@ -1,0 +1,7 @@
+transformers
+colpali-engine[train]
+peft
+bitsandbytes
+accelerate
+datasets
+torch
