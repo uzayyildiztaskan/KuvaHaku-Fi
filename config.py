@@ -17,3 +17,5 @@ OUTPUT_DIR = "/kaggle/working/kuvahaku_fi_model"
 MAX_LENGTH = 77  # Maximum length for text inputs
 LAZY_LOADING = True  # Enable lazy loading of images
 MIXED_PRECISION = "fp16"  # Use mixed precision training
+
+MODEL_PATH = "outputs/kuvahaku_fi_model/checkpoint-659"

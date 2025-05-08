@@ -7,6 +7,7 @@ from model import load_model
 from dataset import load_combined_dataset
 from train import train_model
 from config import *
+from upload import upload_to_huggingface
 
 if __name__ == "__main__":
     torch.multiprocessing.set_start_method('spawn', force=True)
@@ -56,6 +57,9 @@ def main():
         print("\nSaving model...")
         model.save_pretrained(OUTPUT_DIR)
         print("Training complete!")
+
+        upload_to_huggingface(trainer)
+        
     except Exception as e:
         print(f"Error encountered: {e}")
         print_summary("Memory state at error")
