@@ -1,6 +1,5 @@
 from datasets import Dataset, load_dataset, Image
 from config import LAZY_LOADING
-from datasets import Dataset, load_dataset, Image
 
 def load_combined_dataset(DATASET_PATH):
     fi_ds = load_dataset(DATASET_PATH, split="train", 
